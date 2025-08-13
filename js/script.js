@@ -1,4 +1,5 @@
 var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+/** Wg instrukcji nie deklarowałem na początku pliku stałej lub zmiennej */
 
 /**
  * Describe this function...

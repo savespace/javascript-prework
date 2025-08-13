@@ -21,20 +21,20 @@ function buttonClicked(playerMoveName) {
   clearMessages();
   console.log(playerMoveName + ' został kliknięty');
 
-  playerMove = playerMoveName;
+  const playerMove = playerMoveName;
 
-  randomNumber = Math.floor(Math.random() * 3 + 1);
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('wylosowana liczba to: ' + randomNumber);
 
-  computerMove = getMoveName(randomNumber);
+  const computerMove = getMoveName(randomNumber);
   console.log('ruch komputera to: ' + computerMove);
 
   displayResult(playerMove, computerMove);
 }
 
-var buttonRock = document.getElementById('button-rock');
-var buttonPaper = document.getElementById('button-paper');
-var buttonScissors = document.getElementById('button-scissors');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 
 buttonRock.addEventListener('click', function () {
   buttonClicked('kamień');
@@ -52,6 +52,7 @@ buttonScissors.addEventListener('click', function () {
  */
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
+
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {

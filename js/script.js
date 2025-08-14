@@ -1,9 +1,3 @@
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
-/** Wg instrukcji nie deklarowałem na początku pliku stałej lub zmiennej */
-
-/**
- * Describe this function...
- */
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
